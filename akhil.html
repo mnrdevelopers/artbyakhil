@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil | Pencil Sketch Artist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">AKHIL</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Pencil Sketches That <span class="highlight">Breathe</span> Life</h1>
+                <p class="hero-subtitle">Capturing emotions and moments with the stroke of graphite</p>
+                <a href="#portfolio" class="cta-button">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <div class="sketch-container">
+                    <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sample sketch" class="sketch">
+                    <div class="pencil-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <p>A collection of my recent works</p>
+            </div>
+            <div class="gallery">
+                <!-- Gallery items will be added dynamically with JavaScript -->
+            </div>
+            <div class="load-more">
+                <button id="loadMoreBtn">Load More</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>The artist behind the sketches</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Akhil">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Akhil</h3>
+                    <p>I'm a passionate pencil sketch artist with over 8 years of experience in creating realistic portraits and imaginative artworks. My journey began when I first held a pencil, and since then, I've been exploring the infinite possibilities of graphite on paper.</p>
+                    <p>What fascinates me most is capturing the subtle emotions and unique characteristics of my subjects. Every stroke is intentional, every shade tells a story.</p>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-name">Realistic Portraits</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Landscape Sketches</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Concept Art</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="process">
+            <div class="section-header">
+                <h2>My Process</h2>
+                <p>From blank paper to finished artwork</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Concept & Reference</h3>
+                    <p>Understanding the subject, gathering references, and planning the composition.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Basic Sketch</h3>
+                    <p>Light outlines to establish proportions and placement of key elements.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Shading & Texture</h3>
+                    <p>Building up layers of graphite to create depth, form, and texture.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Refinement</h3>
+                    <p>Fine details, contrast adjustments, and final touches to bring the artwork to life.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Commission a custom sketch or just say hello</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>akhil.sketch@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bangalore, India</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">AKHIL</div>
+            <p>© 2023 Akhil Pencil Sketch Artist. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
