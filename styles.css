@@ -7,6 +7,11 @@
     --ash: #dddddd;
     --white: #ffffff;
     --highlight: #555555;
+    
+    /* Font variables */
+    --font-primary: 'Bebas Neue', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    --font-accent: 'Playfair Display', serif;
 }
 
 * {
@@ -14,6 +19,76 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-secondary);
+}
+
+.logo, .hero-title, .section-header h2, .step h3, .contact-info h3 {
+    font-family: var(--font-primary);
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 400; /* Bebas Neue doesn't have weights */
+}
+
+.section-header h2 {
+    font-size: 3rem;
+}
+
+.highlight {
+    font-family: var(--font-accent);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.nav-links a, .cta-button, #loadMoreBtn, .submit-btn {
+    font-family: var(--font-primary);
+    letter-spacing: 1.5px;
+}
+
+.about-text h3 {
+    font-family: var(--font-accent);
+    font-weight: 600;
+}
+
+.footer-logo {
+    font-family: var(--font-primary);
+}
+
+/* Adjust some font sizes for better hierarchy */
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.gallery-item-title {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+}
+
+/* Add some letter-spacing to uppercase elements */
+.nav-links a, .cta-button, #loadMoreBtn, .submit-btn {
+    text-transform: uppercase;
+}
+
+/* Make the highlight effect more pronounced */
+.highlight::after {
+    height: 20px;
+    bottom: 2px;
 }
 
 body {
